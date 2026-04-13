@@ -1,0 +1,35 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "feriados",
+  "queryGroups": [],
+  "documentLocale": "es-ES",
+  "gatewayObjectId": "d8bf0660-e34c-4063-b026-d42d98a9a270",
+  "queriesMetadata": {
+    "Consulta": {
+      "queryId": "dc16ef1c-06cf-4306-a617-63964e81c49b",
+      "queryName": "Consulta",
+      "loadEnabled": false
+    },
+    "Consulta_DataDestination": {
+      "queryId": "5550f169-bcc8-4b1e-9c0f-75e4b7bf2741",
+      "queryName": "Consulta_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "dsn=Informix_REP;database=maestra",
+      "kind": "Odbc",
+      "connectionId": "{\"ClusterId\":\"d8bf0660-e34c-4063-b026-d42d98a9a270\",\"DatasourceId\":\"3e97b50e-a4bd-4e8d-9f36-f35413747567\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"cf2d7a33-5028-44d1-93ba-39741eb32eca\",\"DatasourceId\":\"81fdc7b8-128f-4e45-98ae-aee88227fdb0\"}"
+    }
+  ]
+}
